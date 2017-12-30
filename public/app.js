@@ -9,7 +9,7 @@ $(document).ready(function(){
   // })
 
   $('.cocktail').on('click', function(){
-    $('.cocktail-image').replaceWith('cocktail-name')
+    $('.cocktail-image').replaceWith($('.cocktail-name').show())
   })
 
 
