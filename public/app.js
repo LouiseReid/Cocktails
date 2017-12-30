@@ -1,20 +1,16 @@
 $(document).ready(function(){
 
-  $('.ingredients-button').on('click', function(){
+  $(".ingredients-button").on("click", function(){
     var clickedButton = $(this).next()
     clickedButton.toggle()
   });
 
 
-
-
-  // $('.cocktail').hover(function () {
-  //   $('.cocktail-image').slideUp('slow')
-  //   $('.cocktail-name').show()
-  // }, function () {
-  //   $('.cocktail-image').slideDown('slow')
-  //   $('.cocktail-name').hide()
-  // });
+  $(".cocktail-image").mouseover(function (e) {
+    $(this).attr("src", $(this).attr("src").replace(".jpeg", ".png"));
+  }).mouseout(function (e) {
+    $(this).attr("src", $(this).attr("src").replace(".png", ".jpeg"));
+  });
 
 
 });
