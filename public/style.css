@@ -13,3 +13,8 @@ body {
 .cocktail-name {
   display: none;
 }
+
+.cocktail-image {
+  /* width: 150px;
+  height: 200px; */
+}
