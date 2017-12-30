@@ -1,17 +1,17 @@
 $(document).ready(function(){
 
   $(".ingredients-button").on("click", function(){
-    var clickedButton = $(this).next()
-    clickedButton.toggle()
+    var ingredients = $(this).next()
+    ingredients.toggle()
   });
 
 
   $(".cocktail-image").mouseover(function (e) {
     $(this).attr("src", $(this).attr("src").replace(".jpeg", ".png"));
-    $(this).next().hide()
+    $(".ingredients-button").hide()
   }).mouseout(function (e) {
     $(this).attr("src", $(this).attr("src").replace(".png", ".jpeg"));
-    $(this).next().show()
+    $(".ingredients-button").show()
 
   });
 
