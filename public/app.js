@@ -4,13 +4,15 @@ $(document).ready(function(){
     $('.ingredients').toggle();
   });
 
-  // $('.cocktail-image').hover( function (){
-  //   $('.cocktail-image').replace('.cocktail-name')
-  // })
 
-  $('.cocktail').on('click', function(){
-    $('.cocktail-image').replaceWith($('.cocktail-name').show())
-  })
+  $(".cocktail").hover(function () {
+    $(".cocktail-image").slideUp('slow')
+    $('.cocktail-name').show()
+  }, function () {
+    $(".cocktail-image").slideDown('slow')
+    $('.cocktail-name').hide()
+
+  });
 
 
 });
