@@ -1,10 +1,26 @@
 body {
   margin: 0 auto;
+  font-family: 'Nixie One', cursive;
 }
 
 main {
   display: flex;
   justify-content: space-around;
+}
+
+header {
+  text-align: center;
+  font-size: 30px;
+  color: #ff78ac;
+  text-shadow:
+  0 0 10px #ff78ac,
+  0 0 20px #ff78ac,
+  0 0 40px #0ff,
+  0 0 80px #0ff,
+  0 0 90px #0ff,
+  0 0 100px #0ff,
+  0 0 150px #0ff;
+  padding-bottom: 30px;
 }
 
 .ingredients{
