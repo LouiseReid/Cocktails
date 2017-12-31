@@ -1,6 +1,7 @@
 body {
   margin: 0 auto;
   font-family: 'Nixie One', cursive;
+  background-image: url('wallpaper.jpg');
 }
 
 main {
@@ -22,12 +23,13 @@ header {
   0 0 80px #0ff,
   0 0 90px #0ff,
   0 0 100px #0ff,
-  0 0 150px #0ff;
+  0 0 150px #55f;
   padding-bottom: 30px;
 }
 
 .ingredients{
   display: none;
+  background: rgba(234, 224, 224, 0.51);
 }
 
 .cocktail {
@@ -39,6 +41,16 @@ header {
 }
 
 .cocktail-image {
-  /* width: 150px;
-  height: 200px; */
+  width: 100%;
+  border: solid 2px #ff78ac;
+  outline: solid 2px #55f;
+  padding-bottom: 2px;
+  box-shadow: 0 0 150px #55f;
+  padding-bottom: 0;
+  margin-bottom: 5px;
+}
+
+.cocktail-image:hover {
+  box-shadow: 0 0 150px #cc55ff;
+
 }
