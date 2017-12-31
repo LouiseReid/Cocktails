@@ -43,7 +43,7 @@ header {
 .cocktail-image {
   width: 100%;
   border: solid 2px #ff78ac;
-  outline: solid 2px #55f;
+  border-radius: 4px;
   padding-bottom: 2px;
   box-shadow: 0 0 150px #55f;
   padding-bottom: 0;
@@ -52,5 +52,22 @@ header {
 
 .cocktail-image:hover {
   box-shadow: 0 0 150px #cc55ff;
+}
 
+button {
+  display: block;
+  margin: auto;
+  padding: 4px 4.5px;
+  font-family: 'Nixie One', cursive;
+  font-weight: bolder;
+  font-size: 25px;
+  color: #000000;
+  border: 2px solid #11fff5;
+  border-radius: 4px;
+  background-color: rgba(234, 224, 224, 0.51);
+  box-shadow:
+    0 1px 2px rgba(0,0,0, 0.6),
+    2px 4px 3px rgba(3,0,120, 0.3),
+    inset 2px 4px 3px rgba(3,0,128, 0.3),
+    inset 0 0 7px 2px rgba(0,208,255, 0.6);
 }
