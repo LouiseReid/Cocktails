@@ -4,7 +4,6 @@ $(document).ready(function(){
     addCocktail(cocktail.image, cocktail.ingredients)
   })
 
-
   $(".ingredients-button").on("click", function(){
     var ingredients = $(this).next()
     ingredients.toggle()
@@ -28,20 +27,19 @@ $(document).ready(function(){
 ]
 
 var createObject = function(){
-  $("<div></div>").addClass("cocktail").appendTo('main')
+  $("<div></div>").addClass("cocktail").appendTo("main")
 }
 
 var createImage = function(image){
-  var img = $("<img>").addClass("cocktail-image").appendTo(".cocktail");
+  var img = $("<img>").addClass("cocktail-image").appendTo(".cocktail:last");
   img.attr('src', image)
-  $("<button/>").text("Ingredients").addClass("ingredients-button").appendTo(".cocktail")
 }
 
 var createIngredients = function(ingredients){
-  $("<div></div>").addClass("ingredients").appendTo(".cocktail")
-
+  $("<button/>").text("Ingredients").addClass("ingredients-button").appendTo(".cocktail:last")
+  $("<div></div>").addClass("ingredients").appendTo(".cocktail:last")
   $.each(ingredients, function(key, ingredient){
-      var li = $("<li/>").text(ingredient).appendTo(".ingredients")
+    var li = $("<li/>").text(ingredient).appendTo(".ingredients:last")
   })
 }
 
