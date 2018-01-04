@@ -1,16 +1,12 @@
 $(document).ready(function(){
 
-  // $.each(cocktailsArray, function(key, cocktail){
-  //   addCocktail(cocktail.image, cocktail.ingredients)
-  // })
+    $("<div></div>").addClass("cocktail").appendTo('main')
 
-  // cocktailsArray.forEach(function(cocktail){
-  //   addCocktail(cocktail.image, cocktail.ingredients)
-  // })
 
-  for (var i=0; i<cocktailsArray.length; i++) {
-    addCocktail(cocktailsArray[i].image, cocktailsArray[i].ingredients)
-  }
+  $.each(cocktailsArray, function(key, cocktail){
+    addCocktail(cocktail.image, cocktail.ingredients)
+  })
+
 
   $(".ingredients-button").on("click", function(){
     console.log($(this).next());
@@ -35,9 +31,6 @@ $(document).ready(function(){
   {image: "tomcollins.jpeg", ingredients:["lemon", "gin", "sugar"]}
 ]
 
-var createObject = function(){
-  $("<div></div>").addClass("cocktail").appendTo('main')
-}
 
 var createImage = function(image){
   var img = $("<img>").addClass("cocktail-image").appendTo(".cocktail");
@@ -54,7 +47,6 @@ var createIngredients = function(ingredients){
 }
 
 var addCocktail = function(picture, ingredients){
-  createObject();
   createImage(picture);
   createIngredients(ingredients);
 }
