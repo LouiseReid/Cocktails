@@ -1,9 +1,16 @@
 $(document).ready(function(){
 
-console.log(cocktailsArray);
-  $.each(cocktailsArray, function(key, cocktail){
-    addCocktail(cocktail.name, cocktail.ingredients)
-  })
+  // $.each(cocktailsArray, function(key, cocktail){
+  //   addCocktail(cocktail.image, cocktail.ingredients)
+  // })
+
+  // cocktailsArray.forEach(function(cocktail){
+  //   addCocktail(cocktail.image, cocktail.ingredients)
+  // })
+
+  for (var i=0; i<cocktailsArray.length; i++) {
+    addCocktail(cocktailsArray[i].image, cocktailsArray[i].ingredients)
+  }
 
   $(".ingredients-button").on("click", function(){
     console.log($(this).next());
@@ -23,18 +30,18 @@ console.log(cocktailsArray);
 });
 
  var cocktailsArray = [
-  {name: "mojito.jpeg", ingredients:["lime", "rum", "sugar"]},
-  {name: "pinacolada.jpeg", ingredients:["coconut liquer", "rum", "pineapple juice"]},
-  {name: "tomcollins.jpeg", ingredients:["lemon", "gin", "sugar"]}
+  {image: "mojito.jpeg", ingredients:["lime", "rum", "sugar"]},
+  {image: "pinacolada.jpeg", ingredients:["coconut liquer", "rum", "pineapple juice"]},
+  {image: "tomcollins.jpeg", ingredients:["lemon", "gin", "sugar"]}
 ]
 
 var createObject = function(){
   $("<div></div>").addClass("cocktail").appendTo('main')
 }
 
-var createImage = function(name){
+var createImage = function(image){
   var img = $("<img>").addClass("cocktail-image").appendTo(".cocktail");
-  img.attr('src', name)
+  img.attr('src', image)
   $("<button/>").text("Ingredients").addClass("ingredients-button").appendTo(".cocktail")
 }
 
