@@ -1,15 +1,11 @@
 $(document).ready(function(){
 
-    $("<div></div>").addClass("cocktail").appendTo('main')
-
-
   $.each(cocktailsArray, function(key, cocktail){
     addCocktail(cocktail.image, cocktail.ingredients)
   })
 
 
   $(".ingredients-button").on("click", function(){
-    console.log($(this).next());
     var ingredients = $(this).next()
     ingredients.toggle()
   });
@@ -31,6 +27,9 @@ $(document).ready(function(){
   {image: "tomcollins.jpeg", ingredients:["lemon", "gin", "sugar"]}
 ]
 
+var createObject = function(){
+  $("<div></div>").addClass("cocktail").appendTo('main')
+}
 
 var createImage = function(image){
   var img = $("<img>").addClass("cocktail-image").appendTo(".cocktail");
@@ -40,13 +39,14 @@ var createImage = function(image){
 
 var createIngredients = function(ingredients){
   $("<div></div>").addClass("ingredients").appendTo(".cocktail")
-  var cList = $("ul.cList")
-  $.each(ingredients, function(i){
-    var li = $("<li/>").text(ingredients[i]).appendTo(cList)
+
+  $.each(ingredients, function(key, ingredient){
+      var li = $("<li/>").text(ingredient).appendTo(".ingredients")
   })
 }
 
 var addCocktail = function(picture, ingredients){
+  createObject();
   createImage(picture);
   createIngredients(ingredients);
 }
