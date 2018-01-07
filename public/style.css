@@ -5,12 +5,17 @@ body {
   background-attachment: fixed;
 }
 
-main {
+/* main {
   display: flex;
-  justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
+} */
 
+#layout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 header {
@@ -33,18 +38,20 @@ header {
   background: rgba(234, 224, 224, 0.75);
   font-size: 20px;
   font-weight: bolder;
+  width: 200px;
 }
 
 .cocktail {
-  width: 200px;
+  margin: 10px 40px;
 }
+
 
 .cocktail-name {
   display: none;
 }
 
 .cocktail-image {
-  width: 100%;
+  width: 200px;
   border: solid 2px #ff78ac;
   border-radius: 4px;
   padding-bottom: 2px;
@@ -58,8 +65,8 @@ header {
 }
 
 button {
-  display: block;
-  margin: auto;
+  /* display: block; */
+  display: flex;
   padding: 4px 4.5px;
   font-family: 'Nixie One', cursive;
   font-weight: bolder;
