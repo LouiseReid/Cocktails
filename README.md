@@ -9,6 +9,6 @@ Having built JavaScript apps using Vanilla JavaScript I wanted to experiment wit
 - Ingredients placeholders changed to detailed methodology
 
 
-![Home](https://github.com/LouiseReid/Cocktails/blob/master/home.png)
+![Home](https://github.com/LouiseReid/Cocktails/blob/master/main.png)
 
-![Expanded](https://github.com/LouiseReid/Cocktails/blob/master/name%20and%20ingredients.png)
+![Expanded](https://github.com/LouiseReid/Cocktails/blob/master/expanded.png)
