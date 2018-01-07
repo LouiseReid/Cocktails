@@ -23,15 +23,6 @@ $(document).ready(function(){
  var cocktailsArray = [
   {image: "mojito.jpeg", ingredients:["lime", "rum", "sugar"]},
   {image: "pinacolada.jpeg", ingredients:["coconut liquer", "rum", "pineapple juice"]},
-  {image: "tomcollins.jpeg", ingredients:["lemon", "gin", "sugar"]},
-  {image: "mojito.jpeg", ingredients:["lime", "rum", "sugar"]},
-  {image: "pinacolada.jpeg", ingredients:["coconut liquer", "rum", "pineapple juice"]},
-  {image: "tomcollins.jpeg", ingredients:["lemon", "gin", "sugar"]},
-  {image: "mojito.jpeg", ingredients:["lime", "rum", "sugar"]},
-  {image: "pinacolada.jpeg", ingredients:["coconut liquer", "rum", "pineapple juice"]},
-  {image: "tomcollins.jpeg", ingredients:["lemon", "gin", "sugar"]},
-  {image: "mojito.jpeg", ingredients:["lime", "rum", "sugar"]},
-  {image: "pinacolada.jpeg", ingredients:["coconut liquer", "rum", "pineapple juice"]},
   {image: "tomcollins.jpeg", ingredients:["lemon", "gin", "sugar"]}
 ]
 

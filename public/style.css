@@ -5,12 +5,6 @@ body {
   background-attachment: fixed;
 }
 
-/* main {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-} */
-
 #layout {
   display: flex;
   flex-direction: row;
@@ -65,7 +59,7 @@ header {
 }
 
 button {
-  /* display: block; */
+  margin: 0 auto;
   display: flex;
   padding: 4px 4.5px;
   font-family: 'Nixie One', cursive;
@@ -76,8 +70,8 @@ button {
   border-radius: 4px;
   background-color: rgba(234, 224, 224, 0.6);
   box-shadow:
-    0 1px 2px rgba(0,0,0, 0.6),
-    2px 4px 3px rgba(3,0,120, 0.3),
-    inset 2px 4px 3px rgba(3,0,128, 0.3),
-    inset 0 0 7px 2px rgba(0,208,255, 0.6);
+  0 1px 2px rgba(0,0,0, 0.6),
+  2px 4px 3px rgba(3,0,120, 0.3),
+  inset 2px 4px 3px rgba(3,0,128, 0.3),
+  inset 0 0 7px 2px rgba(0,208,255, 0.6);
 }
